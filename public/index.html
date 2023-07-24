@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="/css/app.39bc21c1.css" rel="stylesheet">
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
@@ -14,4 +15,20 @@
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
+  <script defer src="/js/chunk-vendors.441714a4.js"></script>
+  <script defer src="/js/app.92ed55bc.js"></script>
+  <style>
+    :root {
+      --hue: 207;
+      --sat: 90%;
+      --lig: 61%;
+      --first-color: hsl(var(--hue), var(--sat), var(--lig));
+      --first-color-alt: hsl(var(--hue), var(--sat), 57%); 
+      --body-color: hsl(var(--hue), 40%, 8%);
+      --container-color: #fff;
+    }
+    body {
+      background-color: var(--body-color);
+    }
+  </style>
 </html>
