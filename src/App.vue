@@ -1,12 +1,12 @@
 <template>
-  <div id="app">
+  
     <nav>
       <div class="nav-item">
           <!-- Binding the custom event to the sendNotification and resetnotification method -->
           <notifications :count="unreadCount" @send-notification="sendNotification" @reset-notifications="resetNotifications" />
       </div>
     </nav>
-  </div>
+  
 </template>
 <script>
 import Notifications from "@/components/NotificationsComponent.vue";
