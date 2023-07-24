@@ -27,7 +27,7 @@ export default {
   methods: {
     initSignalR() {
       this.connection = new signalR.HubConnectionBuilder()
-        .withUrl("https://claysyssignalr.service.signalr.net/notificationsHub", {
+        .withUrl("wss://claysyssignalr.service.signalr.net/client/?hub=notificationsHub", {
           skipNegotiation: true,
           transport: signalR.HttpTransportType.WebSockets,
         }) 
