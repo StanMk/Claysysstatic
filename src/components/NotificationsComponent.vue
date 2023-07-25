@@ -186,6 +186,48 @@
     align-items: center;
     justify-content: center;
     padding-top: 10%;
+    
+  }
+
+  /* Add media query for mobile screens */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      /* Adjust padding and other styles for mobile screens */
+      padding: 20px;
+    }
+
+    .welcome-message {
+      font-size: 14px; /* Reduce font size for mobile */
+    }
+
+    .notification-button-container {
+      left: auto; /* Remove absolute positioning for mobile */
+      right: -297px; /* Align the notification button to the right for mobile */
+      top: 50%; /* Position it vertically in the middle */
+      transform: translateY(-50%);
+    }
+
+    .post__buttons {
+      /* Adjust padding and other styles for mobile screens */
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Hide the notification list by default on mobile */
+    .notification-list {
+      display: none;
+    }
+
+    /* Show the notification list when the notifications are toggled on mobile */
+    .notification-list.show {
+      display: block;
+    }
+      /* Adjust margin between the buttons for mobile */
+      .post__buttons button {
+      margin: 5px 0; /* Adjust the margin value as needed */
+      }
   }
   
   </style>
