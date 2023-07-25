@@ -27,7 +27,7 @@ export default {
   methods: {
     initSignalR() {
       this.connection = new signalR.HubConnectionBuilder()
-        .withUrl("Endpoint=Endpoint=https://claysyssignalr.service.signalr.net;AccessKey=ltupsMrwxks3ZIoRRYKDi5i44Lf+slndOteuPnRem5c=;Version=1.0;", {
+        .withUrl("Endpoint=https://claysyssignalr.service.signalr.net;AccessKey=ltupsMrwxks3ZIoRRYKDi5i44Lf+slndOteuPnRem5c=;Version=1.0;", {
           skipNegotiation: true,
           transport: signalR.HttpTransportType.WebSockets,
         }) 
