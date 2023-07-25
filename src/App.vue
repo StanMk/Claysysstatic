@@ -63,7 +63,7 @@ export default {
       }
     },
     formatUnreadCount(count) {
-      // Function to display the count to "99+" if it exceeds 99 notifications
+      
       return count > 99 ? "99+" : count.toString();
     },
 
