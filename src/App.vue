@@ -34,10 +34,6 @@ export default {
         .configureLogging(signalR.LogLevel.Information)
         .build();
 
-      this.connection.on("ReceiveNotification", () => {
-        this.unreadCount++;
-      });
-
          // Event handler for "ReceiveNotification" inside the initSignalR method
          this.connection.on("ReceiveNotification", () => {
         console.log("Received new notification.");
